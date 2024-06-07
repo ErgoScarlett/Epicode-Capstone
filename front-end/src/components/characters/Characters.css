@@ -1,0 +1,168 @@
+.banner-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .banner-image {
+    width: 100%;
+    height: 100%;    
+    max-height: 700px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .character-banner-text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #A3722F;
+    font-family: 'Inter';
+    font-size: 80px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+
+  }
+
+.flip-card-container {
+    perspective: 1000px;
+  }
+  
+  .flip-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card.flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back
+   {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-back {
+    transform: rotateY(180deg);    
+  }
+
+  .flip-card-front .card,
+  .flip-card-back .card {
+  background-color: #040406; 
+  border: 1px solid #212529;
+  border-radius: 0.25rem;
+}
+
+  
+  .flip-card-front img {
+  max-height: 200px; 
+  object-fit: contain; 
+  width: 100%; 
+}
+
+.flip-card-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  } 
+  
+
+  .flip-card-front
+   .flip-card-text {
+    flex: 1;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Smythe';
+    color: darkgray;
+  }
+
+  .flip-card-back 
+   .flip-card-text {
+    font-family: 'Inter'; 
+    color: #999999;
+    text-align: justify;
+    padding: 1rem;
+    overflow: auto;
+    max-height: 200px;
+  }
+  
+  .invisible-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  
+  .flip-card-image {
+    flex: 0 0 auto;
+    max-width: 40%;
+  }
+  
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .flip-card {
+    width: 450px;
+    height: 300px;
+    margin: 10px;   
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .flip-card {
+      width: 300px;
+      height: 200px;
+    }
+    .flip-card-back {
+      width: 300px; 
+      height: 200px; 
+    }
+    .flip-card-back .flip-card-text {
+      max-height: 180px;
+  }
+}
+  
+  @media (max-width: 767px) {
+    .flip-card {
+      width: 250px;
+      height: 200px;
+    }
+    .flip-card-back {
+      width: 250px; 
+      height: 200px;
+    }
+    .flip-card-back .flip-card-text {
+      max-height: 150px; 
+    }
+  }
+  
+  .card-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card-col {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .card-col {
+      width: 50%;
+    }
+  }
+  

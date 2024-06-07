@@ -1,0 +1,50 @@
+.logo-small {
+    height: 55px;
+    width: auto;
+    position: absolute;
+    top: -1px;
+    border-radius: 100px;    
+    animation: glow 2s infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+        filter: drop-shadow(0 0 5px #4671CE);
+    }
+    to {
+        filter: drop-shadow(0 0 10px #4671CE);
+    }
+}
+
+
+.logo-large {
+    height: 75px;
+    width: auto;
+    position: absolute;
+    top: -2px;
+    border-radius: 100px;    
+    animation: glow 2s infinite alternate;
+    z-index: 99;
+  }
+
+  @keyframes glow {
+    from {
+        filter: drop-shadow(0 0 5px #4671CE);
+    }
+    to {
+        filter: drop-shadow(0 0 10px #4671CE);
+    }
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .navbar-brand {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .navbar .btn {
+    font-family: 'Inter', sans-serif;
+  }
+  

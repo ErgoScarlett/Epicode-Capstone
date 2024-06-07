@@ -1,0 +1,105 @@
+.videone-title{
+  font-family: 'Smythe';
+  font-size: 55px;
+  color: darkgray;
+  margin-bottom: 15px;
+  margin-top: 30px;
+ }
+
+ @media (min-width: 768px) and (max-width: 1023px) {
+  .videone-title {
+    text-align: center;
+    font-size: 50px;
+    color: darkgray;      
+  }  
+}
+
+ @media (max-width: 767px) {
+   .videone-title {
+     text-align: center;
+     font-size: 35px;
+     color: darkgray;      
+   }
+ }
+
+ .videone {
+   font-family: 'Inter';
+   font-size: 23px;
+   color: #999999;
+   margin-right: 10px;
+   text-align: justify;
+ }
+
+ @media (min-width: 768px) and (max-width: 1023px) {
+    .videone {
+      text-align: justify;
+      font-size: 23px;
+      color: #999999;
+      margin-left: 35px;
+      margin-right: 35px;     
+  }  
+}
+
+ @media (max-width: 767px) {
+   .videone {
+     text-align: justify;
+     font-size: 15px;
+     color: #999999;
+     margin-left: 25px;
+     margin-right: 25px;
+   }
+ }
+
+ .videotwo-title{
+  font-family: 'Smythe';
+  font-size: 55px;
+  color: darkgray;
+  margin-bottom: 15px;
+  margin-top: 30px;
+ }
+
+ @media (min-width: 768px) and (max-width: 1023px) {
+  .videotwo-title {
+    text-align: center;
+    font-size: 50px;
+    color: darkgray;      
+  }  
+}
+
+ @media (max-width: 767px) {
+   .videotwo-title {
+     text-align: center;
+     font-size: 35px;
+     color: darkgray;      
+   }
+ }
+
+ .videotwo {
+   font-family: 'Inter';
+   font-size: 23px;
+   color: #999999;
+   margin-right: 10px;
+   text-align: justify;
+ }
+
+ @media (min-width: 768px) and (max-width: 1023px) {
+  .videotwo {
+    text-align: justify;
+    font-size: 23px;
+    color: #999999;
+    margin-left: 35px;
+    margin-right: 35px;     
+}  
+}
+
+ @media (max-width: 767px) {
+   .videotwo {
+     text-align: justify;
+     font-size: 15px;
+     color: #999999; 
+     margin-left: 25px;
+     margin-right: 25px;
+   }
+ }
+
+  

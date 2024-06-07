@@ -1,0 +1,97 @@
+.jumbotron {
+  height: 750px;
+  position: relative;
+}
+
+.jumbotron img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.jumbotron-text {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #C8AF90;
+  font-family: 'Smythe';
+  font-size: 65px;
+  animation: text-glow 4s infinite alternate;
+  text-shadow: 0 0 10px rgba(200, 175, 144, 0.5);
+}
+
+@keyframes text-glow {
+  from {
+    text-shadow: 0 0 5px rgba(200, 175, 144, 0.5), 0 0 10px rgba(200, 175, 144, 0.5), 0 0 15px rgba(200, 175, 144, 0.5), 0 0 20px rgba(200, 175, 144, 0.5);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(200, 175, 144, 0.5), 0 0 30px rgba(200, 175, 144, 0.5), 0 0 40px rgba(200, 175, 144, 0.5), 0 0 50px rgba(200, 175, 144, 0.5);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .jumbotron-text {
+    text-align: center;
+    font-size: 65px;
+    top: 90%;    
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .jumbotron-text {
+    text-align: center;
+    font-size: 45px;
+    top: 85%;    
+    width: 100%;
+  }
+}
+
+.console-icons {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  position: absolute;
+  top: 73%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  color: #999999;
+}
+
+.console-icon {
+  display: flex;
+  align-items: center;
+  margin: 0 0.5rem;
+}
+
+.console-icon span {
+  margin-left: 0.5rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .console-icons {
+    top: 70%;
+    font-size: 35px;
+    flex-wrap: column;
+    justify-content: center;
+  }  
+}
+
+@media (max-width: 767px) {
+  .console-icons {
+    top: 70%;
+    font-size: 15px;
+    flex-wrap: column;
+    justify-content: center;
+  }
+
+  .console-icon {
+    margin: 0.25rem ;
+  }
+}

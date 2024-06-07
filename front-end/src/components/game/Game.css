@@ -1,0 +1,189 @@
+  .banner-container {
+    position: relative;
+  }
+  
+  .banner {
+    width: 100%;
+    height: auto;
+    max-height: 900px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .banner-text {
+    position: absolute;
+    top: 95%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #C8AF90;
+    font-family: 'Smythe';
+    font-size: 80px;
+    animation: text-glow 4s infinite alternate;
+    text-shadow: 0 0 10px rgba(200, 175, 144, 0.5);
+  }
+  
+  @keyframes text-glow {
+    from {
+      text-shadow: 0 0 5px rgba(200, 175, 144, 0.5), 0 0 10px rgba(200, 175, 144, 0.5), 0 0 15px rgba(200, 175, 144, 0.5), 0 0 20px rgba(200, 175, 144, 0.5);
+    }
+    to {
+      text-shadow: 0 0 20px rgba(200, 175, 144, 0.5), 0 0 30px rgba(200, 175, 144, 0.5), 0 0 40px rgba(200, 175, 144, 0.5), 0 0 50px rgba(200, 175, 144, 0.5);
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .banner-text {
+      text-align: center;
+      font-size: 45px;
+      top: 95%;
+    }
+  
+    @keyframes text-glow {
+      from {
+        text-shadow: 0 0 3px rgba(200, 175, 144, 0.5), 0 0 6px rgba(200, 175, 144, 0.5), 0 0 9px rgba(200, 175, 144, 0.5), 0 0 12px rgba(200, 175, 144, 0.5);
+      }
+      to {
+        text-shadow: 0 0 12px rgba(200, 175, 144, 0.5), 0 0 18px rgba(200, 175, 144, 0.5), 0 0 24px rgba(200, 175, 144, 0.5), 0 0 30px rgba(200, 175, 144, 0.5);
+      }
+    }
+  }
+
+  .gif-container {
+    margin-top: 130px !important;
+  }
+  @media (max-width: 767px) {
+    .gif-container {
+      margin-top: 60px !important;
+    }  
+  }
+
+  .gif{
+    width: 650px;
+    height: auto;
+  }
+
+  .plot-title{
+   font-family: 'Smythe';
+   font-size: 55px;
+   color: darkgray;
+   margin-bottom: 15px ;
+  }
+
+  @media (max-width: 767px) {
+    .plot-title {
+      text-align: center;
+      font-size: 35px;
+      color: darkgray;      
+    }
+  }
+
+  .plot {
+    font-family: 'Inter';
+    font-size: 23px;
+    color: #999999;
+    margin-right: 10px;
+    text-align: justify;
+  }
+
+  @media (max-width: 767px) {
+    .plot {
+      text-align: justify;
+      font-size: 15px;
+      color: #999999;
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+  }
+
+  .faction-text {
+   font-family: 'Smythe';
+   font-size: 55px;
+   color: #C8AF90;
+   margin-bottom: 15px;
+   animation: text-glow 4s infinite alternate;
+   text-shadow: 0 0 10px rgba(200, 175, 144, 0.5);
+  }
+  @media (max-width: 767px) {
+    .faction-text {
+      text-align: center;
+      font-size: 35px;
+      top: 95%;
+    }
+  }
+
+  .piltover-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .piltover-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .piltover-image {
+    margin-right: 1rem;
+    position: relative;
+  }
+  
+  .piltover-text {
+    text-align: left;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    margin-left: 30px;
+  }
+  
+  .zaun-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .zaun-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: row-reverse;
+  }
+  
+  .zaun-image {
+    margin-left: 1rem;
+    position: relative;
+  }
+  
+  .zaun-text {
+    text-align: right;
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    margin-right: 30px;
+  }
+  
+  .city {
+    font-family: 'Smythe';
+    color: darkgray;
+    font-size: 40px;
+  }
+
+  .city-description {
+    font-family: 'Inter';
+    color: #999999;
+    font-size: 20px;
+    text-align: justify;
+  }
+  
+  
+
+
+  

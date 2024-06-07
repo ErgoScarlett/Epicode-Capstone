@@ -1,0 +1,35 @@
+.carousel-heading{
+    font-family: 'Smythe';
+    font-size: 65px;
+    color: #C8AF90;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    animation: title-glow 4s infinite alternate;
+    text-shadow: 0 0 10px rgba(200, 175, 144, 0.5);   
+}
+
+@keyframes title-glow {
+  from {
+    text-shadow: 0 0 5px rgba(200, 175, 144, 0.5), 0 0 10px rgba(200, 175, 144, 0.5), 0 0 15px rgba(200, 175, 144, 0.5), 0 0 20px rgba(200, 175, 144, 0.5);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(200, 175, 144, 0.5), 0 0 30px rgba(200, 175, 144, 0.5), 0 0 40px rgba(200, 175, 144, 0.5), 0 0 50px rgba(200, 175, 144, 0.5);
+  }
+}
+  
+   @media (min-width: 768px) and (max-width: 1023px) {
+    .carousel-heading {
+      text-align: center;
+      font-size: 65px;
+      color: #C8AF90;      
+    }  
+  }
+  
+   @media (max-width: 767px) {
+     .carousel-heading {
+       text-align: center;
+       font-size: 45px;
+       color: #C8AF90;      
+     }
+   }
