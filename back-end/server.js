@@ -4,6 +4,8 @@ import cors from 'cors';
 import { config } from 'dotenv';
 config();
 import registerRouter from './routes/register.routes.js';
+import loginRouter from './routes/login.routes.js';
+import profileRouter from './routes/profile.routes.js';
 import endpoints from 'express-list-endpoints';
 
 
@@ -13,6 +15,9 @@ server.use(cors());
 server.use(express.json());
 
 server.use('/api/auth', registerRouter);
+server.use('/api/auth', loginRouter);
+server.use('/api/auth', profileRouter);
+
 
 const initServer = async () => {
   try {

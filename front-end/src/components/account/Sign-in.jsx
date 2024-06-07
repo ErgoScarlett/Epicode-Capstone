@@ -62,7 +62,7 @@ const SignInPage = () => {
               </div>
               <div className="col-md-6">
                 <div className="card-body">
-                  <h5 className="sign-in-title">Registrazione</h5>
+                  <h5 className="sign-in-title">Sign-In</h5>
                   {error && <Alert message={error} variant="danger"/>}
                   <Form onSubmit={handleSignIn} className="text-center">
                     <Form.Group controlId="name" className="mb-2">

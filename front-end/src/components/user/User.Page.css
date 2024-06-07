@@ -1,0 +1,23 @@
+.profile-card {
+    background-color: #212529;
+    border: 1px solid #212529;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 50px rgba(89, 89, 89, 0.3);
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .profile-title {
+    font-family: 'Smythe';
+    font-size: 40px;
+    color: darkgray;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .profile-text {
+    font-family: 'Inter';
+    font-size: 20px;
+    color: #999999;
+    text-align: center;
+  }
+  

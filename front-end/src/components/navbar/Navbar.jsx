@@ -1,12 +1,18 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Nav, Navbar, Button } from 'react-bootstrap';
 import Logo from '../../assets/logo-capstone.png';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Navbar.css';
 
 
 const NavBar = () => {
+  const navigate = useNavigate();
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
       useEffect(() => {
+        const token = localStorage.getItem('token');
+        setIsAuthenticated(!!token);
+
         const handleScroll = () => {
           const navbar = document.querySelector('.navbar');
           const scrollPosition = window.scrollY;
@@ -22,6 +28,12 @@ const NavBar = () => {
           window.removeEventListener('scroll', handleScroll);
         };
       }, []);
+
+      const handleLogout = () => {
+        localStorage.removeItem('token');
+        setIsAuthenticated(false);
+        navigate('/');
+      };
     
       return (
         <Navbar bg="dark" data-bs-theme="dark" sticky="top" expand="lg" className="bg-body-tertiary" collapseOnSelect={true}>
@@ -40,15 +52,35 @@ const NavBar = () => {
                 <img src={Logo} alt="Logo" className='logo-large' />
               </Navbar.Brand>
             </Nav>
-            <Nav className="d-flex ms-auto">
-              <Nav.Link href='/register' className='nav-link me-3 d-none d-lg-inline d-lg-flex text-decoration-underline'>
-                    Sign In
-                  </Nav.Link>
-                  <Link to='/register' className='d-lg-none mb-2'>
-                    <Button variant="outline-light" size="sm">
-                      Sign In
-                    </Button>
-                  </Link>                  
+            <Nav className="d-flex ms-auto">            
+            {isAuthenticated ? (
+          <>
+          <Link to="/profile">
+            <Button variant="outline-light" size="sm" className="mt-1 me-3">
+              Profilo
+            </Button>
+            </Link>
+            <Nav.Link onClick={handleLogout} className="nav-link me-3 d-none d-lg-inline d-lg-flex text-decoration-underline">
+              Logout
+            </Nav.Link>
+          </>
+        ) : (
+          <>
+            <Nav.Link href="/register" className="nav-link me-3 d-none d-lg-inline d-lg-flex text-decoration-underline">
+              Sign In
+            </Nav.Link>
+            <Link to="/login">
+              <Button variant="outline-light" size="sm" className="mt-1">
+                Login
+              </Button>
+            </Link>
+            <Link to="/register" className="d-lg-none mt-3">
+              <Button variant="outline-light" size="sm">
+                Sign In
+              </Button>
+            </Link>
+          </>
+        )}          
             </Nav>
           </Navbar.Collapse>
         </Container>
